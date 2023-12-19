@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    height: 200vh;
+
+}
+
+
+div{
+    top:0;
+    right: 0;
+    position: absolute;
+    background: url();
+
+}

@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    direction: rtl;
+}
+
+
+h3 {
+    padding-bottom: 12px;
+    margin-bottom: 48px;
+    margin-left: -269px;
+    border-bottom: 5px solid red;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 112px;
+    margin-left: 254px;
+
+
+}
+
+.fa-eye-slash{
+    display: none;
+}
+
+.toggle svg {
+    color: rgb(119, 113, 113);
+    opacity: .4;
+    cursor: pointer;
+}
+
+.toggle svg:hover {
+    opacity: .1;
+    color: red;
+}
+
+
+.hide .fa-eye{
+    display:none;
+}
+
+.hide .fa-eye-slash{
+    display: block;
+}
+
+
+input {
+
+    width: 250px;
+    margin-top: 117px;
+    margin-right: -236px;
+}

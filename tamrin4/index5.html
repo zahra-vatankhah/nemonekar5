@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="acordiaon">
+            <div class="acordion-title">html</div>
+            <div class="acordion-content">
+                در کادر زیر هر متنی را که دوست دارید تایپ کنید تا ما آن را برایتان نگه داریم و همیشه در دسترس شما قرار
+                دهیم؛ از این طریق می‌توانید متن آزمایشی و متن تستی خودتان را تایپ کرده و در طرح‌هایتان از این متن
+                استفاده کنید... تایپ کنید، به صورت خودکار ذخیره می‌شود.
+            </div>
+            <div class="acordion-title">css</div>
+            <div class="acordion-content">
+                در کادر زیر هر متنی را که دوست دارید تایپ کنید تا ما آن را برایتان نگه داریم و همیشه در دسترس شما قرار
+                دهیم؛ از این طریق می‌توانید متن آزمایشی و متن تستی خودتان را تایپ کرده و در طرح‌هایتان از این متن
+                استفاده کنید... تایپ کنید، به صورت خودکار ذخیره می‌شود.
+            </div>
+            <div class="acordion-title">js</div>
+            <div class="acordion-content">
+                در کادر زیر هر متنی را که دوست دارید تایپ کنید تا ما آن را برایتان نگه داریم و همیشه در دسترس شما قرار
+                دهیم؛ از این طریق می‌توانید متن آزمایشی و متن تستی خودتان را تایپ کرده و در طرح‌هایتان از این متن
+                استفاده کنید... تایپ کنید، به صورت خودکار ذخیره می‌شود.
+            </div>
+            <div class="acordion-title">react</div>
+            <div class="acordion-content">
+                در کادر زیر هر متنی را که دوست دارید تایپ کنید تا ما آن را برایتان نگه داریم و همیشه در دسترس شما قرار
+                دهیم؛ از این طریق می‌توانید متن آزمایشی و متن تستی خودتان را تایپ کرده و در طرح‌هایتان از این متن
+                استفاده کنید... تایپ کنید، به صورت خودکار ذخیره می‌شود.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const accor = document.querySelectorAll('.acordion-title');
+        accor.forEach(item => {
+            item.addEventListener("click", function () {
+            item.classList.add("active");
+                const content = item.nextElementSibling;
+                if (content.style.height) {
+                    content.style.height = "null";
+                }
+                else {
+                    content.style.height = content.scrollHeight +"px";
+                }
+            })
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

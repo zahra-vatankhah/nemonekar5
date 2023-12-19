@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 45, 10);
+}
+
+
+a {
+
+    text-decoration: none;
+    position: relative;
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    width: 176px;
+    height: 73px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a:nth-child(2) {
+    background-color: rgb(6, 6, 132);
+}
+
+
+span {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: .5;
+    }
+
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}

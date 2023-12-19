@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    direction: rtl;
+}
+
+
+
+.container{
+    margin: 150px auto;
+    width: 700px;
+}
+
+
+.acordiaon .acordion-title{
+    padding: 15px;
+    background-color: red;
+    color: white;
+    font-size: 20ox;
+    cursor: pointer;
+    border: 3px solid gray;
+}
+.acordiaon .acordion-title::before{
+    content: '+';
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+}
+
+.acordiaon .acordion-title.active::before{
+    content: '-';
+    margin-left: 16px;
+
+}
+
+
+
+
+.acordiaon .acordion-content{
+    height: 0;
+    background-color: gray;
+    overflow: hidden;
+
+}
+
+

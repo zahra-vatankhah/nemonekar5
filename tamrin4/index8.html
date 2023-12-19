@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+
+
+
+        .box {
+            position: absolute;
+            top: 40px;
+            right: 15px;
+            margin: 20px;
+            display: flex;
+            text-indent: 99000;
+            background-color: white;
+        }
+
+
+        .box a {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+        }
+
+        #red {
+            background-color: #ff0000;
+        }
+
+
+        #blue {
+            background-color: #0000ff;
+        }
+
+
+        #green {
+            background-color: #008000;
+        }
+
+        #gray {
+            background-color: #808080;
+        }
+
+        #yellow {
+            background-color: #ffff00;
+        }
+
+
+        #black {
+            background-color: #000000;
+        }
+
+
+        #cyan {
+            background-color: #00ffff;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="box">
+        <a href="#" onclick="changecolor('red')"  id="red">#ff0000</a>
+        <a  href="#" onclick="changecolor('blue')"  id="blue">#0000ff</a>
+        <a  href="#" onclick="changecolor('green')" id="green">#008000</a>
+        <a href="#" onclick="changecolor('gray')"  id="gray">#808080</a>
+        <a  href="#" onclick="changecolor('yellow')" id="yellow">#ffff00</a>
+        <a  href="#" onclick="changecolor('black')" id="black">#000000</a>
+        <a href="#" onclick="changecolor('cyan')"  id="cyan">#00ffff</a>
+    </div>
+
+
+
+
+    <script>
+
+        function changecolor(id) {
+            document.body.style.background = document.getElementById(id).innerHTML;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
